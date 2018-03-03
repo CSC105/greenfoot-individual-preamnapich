@@ -23,9 +23,9 @@ public class playbutton extends Actor
     // Change image if mouse click on play button
     public void onMouse(){
         if(Greenfoot.mouseMoved(this)){
-            setImage("playbutton-2.png");
+            setImage("start2.png");
         }else{
-            setImage("playbt.png");
+            setImage("start.png");
         }
     }
 }

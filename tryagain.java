@@ -22,7 +22,12 @@ public class tryagain extends Actor
             ((Gameover)(getWorld())).stopped();
             Greenfoot.setWorld(new MyWorld());
         }
-        
+        if(Greenfoot.mouseMoved(this)){
+            setImage("try2.png");
+        }else{
+            setImage("try1.png");
+        }
    
     }
+   
 }

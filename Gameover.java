@@ -37,7 +37,7 @@ private void prepare()
     tryagain tryagain = new tryagain();
     addObject(tryagain,323,241);
     tryagain.setLocation(312,232);
-    tryagain.setLocation(310,232);
+    tryagain.setLocation(312,220);
 }
 //Set Music
 public void act(){

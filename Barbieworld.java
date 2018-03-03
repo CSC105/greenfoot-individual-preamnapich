@@ -35,7 +35,7 @@ public class Barbieworld extends World
         playbutton playbutton = new playbutton();
         addObject(playbutton,371,99);
         playbutton.setLocation(365,108);
-        playbutton.setLocation(366,105);
+        playbutton.setLocation(350,140);
     }
     //Set Music 
     public void act(){

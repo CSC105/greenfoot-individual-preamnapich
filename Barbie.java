@@ -44,11 +44,11 @@ public class Barbie extends Actor
     // Set Barbie to move right and left 
     public void move(){
         if(Greenfoot.isKeyDown("left")){
-            move(-6);
+            move(-8);
             animateL();
             isRight = false;
         }else if(Greenfoot.isKeyDown("right")){
-            move(6);
+            move(8);
             animate();
             isRight = true;
         }
@@ -94,6 +94,8 @@ public class Barbie extends Actor
         Actor blackcupcake = getOneIntersectingObject(blackcupcake.class);
         if(blackcupcake != null){
             getWorld().removeObject(blackcupcake);
+            GreenfootSound music = new GreenfootSound("failed.wav");
+            music.play();
             if(heart < 2){
                 getWorld().removeObject(hearts[heart]);
                 heart += 1;
@@ -117,21 +119,29 @@ public class Barbie extends Actor
                 int points = 1;
                 getWorld().removeObject(cupcake1);
                 MyWorld.updateScore(points);
+                GreenfootSound music = new GreenfootSound("eat.mp3");
+                music.play();
             }
             if(isTouching(cupcake2.class)){
                 int points = 5;
                 getWorld().removeObject(cupcake2);
                 MyWorld.updateScore(points);
+                GreenfootSound music = new GreenfootSound("eat.mp3");
+                music.play();
             }
             if(isTouching(cupcake3.class)){
                 int points = 10;
                 getWorld().removeObject(cupcake3);
                 MyWorld.updateScore(points);
+                GreenfootSound music = new GreenfootSound("eat.mp3");
+                music.play();
             }
             if(isTouching(cupcake4.class)){
                 int points = 15;
                 getWorld().removeObject(cupcake4);
                 MyWorld.updateScore(points);
+                GreenfootSound music = new GreenfootSound("eat.mp3");
+                music.play();
             }
         
     }
